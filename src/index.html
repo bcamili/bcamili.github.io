@@ -3,9 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BenjaminCamili.com</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <div id="app"></div>
+    <canvas id="background-canvas"></canvas>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#angebot">Angebot</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#übermich">Über mich</a>
+        <a href="#kontakt">Kontakt</a>
+    </nav>
+
+    <header>
+        <h1>Benjamin Camili</h1>
+        <p>Ich baue einfache, professionelle Websites für Selbstständige und kleine Unternehmen.</p>
+        <a href="#kontakt">Webseite anfragen</a>
+    </header>
+
+    <section id="angebot">
+        <h2>Leistungen</h2>
+        <ul>
+            <li>Moderne, responsive One-Page-Websites</li>
+            <li>Kontaktformular, Impressum & DSGVO-Konformität</li>
+            <li>Eigene Domain & E-Mail-Adresse</li>
+            <li>Pflegeleichte, wartungsfreie Lösungen</li>
+        </ul>
+    </section>
+
+    <section id="portfolio">
+        <h2>Projekte</h2>
+        <div class="project">
+            <h3>Friseur Beispielseite</h3>
+            <p>Eine fiktive Seite für einen lokalen Friseur – zeigt ein klassisches One-Page-Layout mit Kontaktformular.</p>
+            <a href="#">Live-Demo</a>
+        </div>
+        <div class="project">
+            <h3>Benjamincamili.de</h3>
+            <p>Diese Portfolioseite – demonstriert Hosting mit GitHub Pages, eigene Domain und moderne Entwicklung.</p>
+        </div>
+    </section>
+
+    <section id="übermich">
+        <h2>Über mich</h2>
+        <p>Ich bin Benjamin Camili, freiberuflicher Webentwickler aus Deutschland. Ich komme ursprünglich aus der Medientechnologie und baue Websites mit HTML, CSS und JavaScript – klar, wartbar und effektiv.</p>
+        <p>Außerdem bastle ich an einem eigenen Videospiel und baue Synthesizer aus analogen Bauteilen.</p>
+    </section>
+
+    <section id="kontakt">
+        <h2>Kontakt</h2>
+        <p>Schreib mir eine Nachricht oder per E-Mail an <strong>info@benjamincamili.de</strong>.</p>
+        <form class="contact-form">
+            <input type="text" placeholder="Dein Name" required>
+            <input type="email" placeholder="Deine E-Mail" required>
+            <textarea placeholder="Deine Nachricht" rows="5" required></textarea>
+            <button type="submit">Absenden</button>
+        </form>
+    </section>
+
+    <footer>
+            <p>&copy; 2025 Benjamin Camili – <a href="#">Impressum</a> – <a href="#">Datenschutz</a></p>
+    </footer>
 </body>
 </html>
