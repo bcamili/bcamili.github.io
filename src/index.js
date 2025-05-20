@@ -1,3 +1,2 @@
 import "./styles.css";
-
-document.getElementById("app").textContent = "works";
+import "./backgroundCanvas.js"
