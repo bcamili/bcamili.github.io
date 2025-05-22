@@ -7,66 +7,72 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Permanent+Marker&display=swap" rel="stylesheet">
 </head>
 <body>
     <canvas id="background-canvas"></canvas>
+    
     <nav>
-        <a href="#">Home</a>|
+        <a href="#home">Home</a>|
         <a href="#angebot">Angebot</a>|
         <a href="#portfolio">Portfolio</a>|
         <a href="#uebermich">Über mich</a>|
         <a href="#kontakt">Kontakt</a>
     </nav>
-
-    <header>
-        <img src="Portrait.jpg" alt="Ein Foto von Benjamin Camili">
-        <h1>Benjamin Camili</h1>
-        <p>Ich baue einfache, professionelle Websites für Selbstständige und kleine Unternehmen.</p>
-        <a href="#kontakt">Webseite anfragen</a>
-    </header>
-
-    <section id="angebot">
-        <h2>Leistungen</h2>
-        <ul>
-            <li>Moderne, responsive One-Page-Websites</li>
-            <li>Kontaktformular, Impressum & DSGVO-Konformität</li>
-            <li>Eigene Domain & E-Mail-Adresse</li>
-            <li>Pflegeleichte, wartungsfreie Lösungen</li>
-        </ul>
-    </section>
-
-    <section id="portfolio">
-        <h2>Projekte</h2>
-        <div class="project">
-            <h3>Friseur Beispielseite</h3>
-            <p>Eine fiktive Seite für einen lokalen Friseur – zeigt ein klassisches One-Page-Layout mit Kontaktformular.</p>
-            <a href="#">Live-Demo</a>
-        </div>
-        <div class="project">
-            <h3>Benjamincamili.de</h3>
-            <p>Diese Portfolioseite – demonstriert Hosting mit GitHub Pages, eigene Domain und moderne Entwicklung.</p>
-        </div>
-    </section>
-
-    <section id="uebermich">
-        <h2>Über mich</h2>
-        <p>Ich bin Benjamin Camili, freiberuflicher Webentwickler aus Deutschland. Ich komme ursprünglich aus der Medientechnologie und baue Websites mit HTML, CSS und JavaScript – klar, wartbar und effektiv.</p>
-        <p>Außerdem bastle ich an einem eigenen Videospiel und baue Synthesizer aus analogen Bauteilen.</p>
-    </section>
-
-    <section id="kontakt">
-        <h2>Kontakt</h2>
-        <p>Schreib mir eine Nachricht oder per E-Mail an <strong>info@benjamincamili.de</strong>.</p>
-        <form class="contact-form">
-            <input type="text" placeholder="Dein Name" required>
-            <input type="email" placeholder="Deine E-Mail" required>
-            <textarea placeholder="Deine Nachricht" rows="5" required></textarea>
-            <button type="submit">Absenden</button>
-        </form>
-    </section>
-
+    <div id="pageContainer">
+        <div id="home"></div>
+        <header id="hero">
+            <div id="header-pic-wrapper">
+                <img src="Portrait.jpg" alt="Ein Foto von Benjamin Camili">
+                <h1>Benjamin Camili</h1>
+            </div>
+            <p>Einfache, professionelle Websites für Selbstständige und kleine Unternehmen.</p>
+            <a href="#kontakt" class="dark-button">Website anfragen</a>
+        </header>
+        <div id="angebot"></div>
+        <section id="angebot-section">
+            <h2>Angebot</h2>
+            <ul>
+                <li>Moderne, responsive One-Page-Websites</li>
+                <li>Kontaktformular, Impressum & DSGVO-Konformität</li>
+                <li>Eigene Domain & Mail-Adresse</li>
+                <li>Pflegeleichte, wartungsfreie Lösungen</li>
+            </ul>
+        </section>
+        <div id="portfolio"></div>
+        <section id="portfolio-section">
+            <h2>Portfolio</h2>
+            <div class="project">
+                <h3>Friseur Beispielseite</h3>
+                <p>Eine fiktive Seite für einen lokalen Friseur – zeigt ein klassisches One-Page-Layout mit Kontaktformular.</p>
+                <a href="#">Live-Demo</a>
+            </div>
+            <div class="project">
+                <h3>Benjamincamili.de</h3>
+                <p>Diese Portfolioseite – demonstriert Hosting mit GitHub Pages, eigene Domain und moderne Entwicklung.</p>
+            </div>
+        </section>
+        <div id="uebermich"></div>
+        <section id="uebermich-section">
+            <h2>Über mich</h2>
+            <p>Ich bin Benjamin Camili, freiberuflicher Webentwickler aus Köln. Ich komme ursprünglich aus der Medientechnologie und baue Websites mit HTML, CSS und JavaScript – klar, wartbar und effektiv.</p>
+        </section>
+        <div id="kontakt"></div>
+        <section id="kontakt-section">
+            <h2>Kontakt</h2>
+            <p>Schreib mir eine Nachricht oder eine E-Mail an <strong>info@benjamincamili.de</strong>.</p>
+            <form class="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id = "name" placeholder="Dein Name" required>
+                <label for="email">E-Mail</label>
+                <input type="email" id="email" placeholder="Deine E-Mail" required>
+                <label for="msg">Nachricht</label>
+                <textarea id="msg" placeholder="Deine Nachricht" rows="5" required></textarea>
+                <button type="submit" class="dark-button">Absenden</button>
+            </form>
+        </section>
+        
+    </div>
     <footer>
             <p>&copy; 2025 Benjamin Camili – <a href="#">Impressum</a> – <a href="#">Datenschutz</a></p>
     </footer>
