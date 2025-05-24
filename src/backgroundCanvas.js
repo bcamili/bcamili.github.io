@@ -37,7 +37,7 @@ let speed = .1
 
 let circle = (pos, vel, rad) =>{
     let newCircle = {
-        "radius": rad,
+        "color": Math.random() <(1/3) ? highlight : (Math.random() < 0.5 ? midColor : lowColor), 
         "position": {
             "x": pos[0],
             "y": pos[1]
@@ -46,7 +46,7 @@ let circle = (pos, vel, rad) =>{
             "x": vel[0] * (speed + Math.random()/20),
             "y": vel[1] * (speed + Math.random()/20)
         },
-        "color": Math.random() <(1/3) ? highlight : (Math.random() < 0.5 ? midColor : lowColor), 
+        "radius": rad,
         "randomLayer": Math.random(),
         "draw": (()=>{
                 ctx.beginPath();
@@ -111,7 +111,7 @@ function reset(){
     for(let i=0; i<Math.max(canvas.width, canvas.height);i++){
         let pos = [Math.random()*canvas.width, Math.random()*canvas.height]
         let vel = [(Math.random()-0.5)*2, (Math.random()-0.5)*2]
-        let rad = Math.random()*10
+        let rad = Math.max(2, Math.random()*10)
         let newCircle = circle(pos, vel, rad)
         if(newCircle.color == highlight){
             circles["high"].push(newCircle)

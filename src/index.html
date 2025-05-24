@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BenjaminCamili.com</title>
+    <title>BenjaminCamili.de</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,11 +13,18 @@
     <canvas id="background-canvas"></canvas>
     
     <nav>
-        <a href="#home">Home</a>|
-        <a href="#angebot">Angebot</a>|
-        <a href="#portfolio">Portfolio</a>|
-        <a href="#uebermich">Über mich</a>|
-        <a href="#kontakt">Kontakt</a>
+        <div id="logo-container">
+            <a id="logo" href="#home">
+                Benjamin
+                Camili.de
+            </a>
+        </div>
+        <div id="nav-container">
+            <a href="#angebot">Angebot</a>|
+            <a href="#portfolio">Portfolio</a>|
+            <a href="#uebermich">Über mich</a>|
+            <a href="#kontakt">Kontakt</a>
+        </div>
     </nav>
     <div id="pageContainer">
         <div id="home"></div>
@@ -27,7 +34,7 @@
                 <h1>Benjamin Camili</h1>
             </div>
             <p>Einfache, professionelle Websites für Selbstständige und kleine Unternehmen.</p>
-            <a href="#kontakt" class="dark-button">Website anfragen</a>
+            <a id="callToAction" href="#kontakt" class="dark-button">Website anfragen</a>
         </header>
         <div id="angebot"></div>
         <section id="angebot-section">
@@ -50,7 +57,7 @@
                         <img src="TodoAppScreenshot.jpg" alt="Screenshot Web-App TodoApp">
                     </div>
                     <p>Simples Online-Tool zur Organisierung von Projektaufgaben.</i></p>
-                    <a href="https://bcamili.github.io/odin-todo-list/">Live-Demo</a>
+                    <a href="https://bcamili.github.io/odin-todo-list/" class="light-button">Live-Demo</a>
                 </div>
                 <div class="project">
                     <h3>BattleShip</h3>
@@ -58,7 +65,7 @@
                         <img src="BattleShipScreenshot.jpg" alt="Screenshot des Spiels Battleship">
                     </div>
                     <p>Das klassische »Schiffe Versenken« als 1- oder 2-Spieler-Variante. <i>(Für Chrome Desktop)</i></p>
-                    <a href="https://bcamili.github.io/BattleShip/">Live-Demo</a>
+                    <a href="https://bcamili.github.io/BattleShip/" class="light-button">Live-Demo</a>
                 </div>
                 <div class="project">
                     <h3>The Weather</h3>
@@ -66,11 +73,11 @@
                         <img src="WeatherAppScreenshot.jpg" alt="Screenshot der Web-App The Weather">
                     </div>
                     <p>Wetterabfrage via Visual Crossing API, mit an Wetterlage angepasstem Theme </i></p>
-                    <a href="https://bcamili.github.io/WeatherApp/">Live-Demo</a>
+                    <a href="https://bcamili.github.io/WeatherApp/" class="light-button">Live-Demo</a>
                 </div>
                 <div class="project">
-                    <h3 style="font-size: 1em;">benjamincamili.de</h3>
-                    <p>Diese Portfolioseite – demonstriert Hosting mit GitHub Pages, eigener Domain und moderner Entwicklung.</p>
+                    <h3 style="font-size: 1em;">BenjaminCamili.de</h3>
+                    <p id="self-project">Diese Portfolioseite – demonstriert Hosting mit GitHub Pages, eigener Domain und moderner Entwicklung.</p>
                 </div>
             </div>
         </section>
