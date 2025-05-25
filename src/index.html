@@ -31,10 +31,13 @@
         <header id="hero">
             <div id="header-pic-wrapper">
                 <img src="Portrait.jpg" alt="Ein Foto von Benjamin Camili">
-                <h1>Benjamin Camili</h1>
+                <p id="text-in-picture">Benjamin Camili</p>
             </div>
-            <p>Einfache, professionelle Websites für Selbstständige und kleine Unternehmen.</p>
-            <a id="callToAction" href="#kontakt" class="dark-button">Website anfragen</a>
+            <div id="header-text-wrapper">
+                <h1>BenjaminCamili.de</h1>
+                <p>Einfache, professionelle Websites für Selbstständige und kleine Unternehmen.</p>
+                <a id="callToAction" href="#kontakt" class="dark-button">Website anfragen</a>
+            </div>
         </header>
         <div id="angebot"></div>
         <section id="angebot-section">
@@ -53,31 +56,43 @@
             <div id="projects">
                 <div class="project">
                     <h3>TodoApp</h3>
-                    <div class="project-screenshot">
-                        <img src="TodoAppScreenshot.jpg" alt="Screenshot Web-App TodoApp">
+                    <div class="project-content-wrapper">
+                        <div class="project-screenshot">
+                            <img src="TodoAppScreenshot.jpg" alt="Screenshot Web-App TodoApp">
+                        </div>
+                        <div class="project-text-wrapper">
+                            <p>Simples Online-Tool zur Organisierung von Projektaufgaben.</i></p>
+                            <a href="https://bcamili.github.io/odin-todo-list/" class="demo-button">Live-Demo</a>
+                        </div>
                     </div>
-                    <p>Simples Online-Tool zur Organisierung von Projektaufgaben.</i></p>
-                    <a href="https://bcamili.github.io/odin-todo-list/" class="light-button">Live-Demo</a>
                 </div>
                 <div class="project">
                     <h3>BattleShip</h3>
-                    <div class="project-screenshot">
-                        <img src="BattleShipScreenshot.jpg" alt="Screenshot des Spiels Battleship">
+                     <div class="project-content-wrapper">
+                        <div class="project-screenshot">
+                            <img src="BattleShipScreenshot.jpg" alt="Screenshot des Spiels Battleship">
+                        </div>
+                        <div class="project-text-wrapper">
+                            <p>Das klassische »Schiffe Versenken« als 1- oder 2-Spieler-Variante. <i>(Für Chrome Desktop)</i></p>
+                            <a href="https://bcamili.github.io/BattleShip/" class="demo-button">Live-Demo</a>
+                        </div>
                     </div>
-                    <p>Das klassische »Schiffe Versenken« als 1- oder 2-Spieler-Variante. <i>(Für Chrome Desktop)</i></p>
-                    <a href="https://bcamili.github.io/BattleShip/" class="light-button">Live-Demo</a>
                 </div>
                 <div class="project">
                     <h3>The Weather</h3>
-                    <div class="project-screenshot">
-                        <img src="WeatherAppScreenshot.jpg" alt="Screenshot der Web-App The Weather">
+                    <div class="project-content-wrapper">
+                        <div class="project-screenshot">
+                            <img src="WeatherAppScreenshot.jpg" alt="Screenshot der Web-App The Weather">
+                        </div>
+                        <div class="project-text-wrapper">
+                            <p>Wetterabfrage via Visual Crossing API, mit an Wetterlage angepasstem Theme </i></p>
+                            <a href="https://bcamili.github.io/WeatherApp/" class="demo-button">Live-Demo</a>
+                        </div>
                     </div>
-                    <p>Wetterabfrage via Visual Crossing API, mit an Wetterlage angepasstem Theme </i></p>
-                    <a href="https://bcamili.github.io/WeatherApp/" class="light-button">Live-Demo</a>
                 </div>
-                <div class="project">
+                <div class="project" id="self-project">
                     <h3 style="font-size: 1em;">BenjaminCamili.de</h3>
-                    <p id="self-project">Diese Portfolioseite – demonstriert Hosting mit GitHub Pages, eigener Domain und moderner Entwicklung.</p>
+                    <p>Diese Portfolioseite – demonstriert Hosting mit GitHub Pages, eigener Domain und moderner Entwicklung.</p>
                 </div>
             </div>
         </section>
@@ -91,12 +106,14 @@
             <h2>Kontakt</h2>
             <p>Schreib mir eine Nachricht oder eine E-Mail an <strong>info@benjamincamili.de</strong>.</p>
             <form class="contact-form">
-                <label for="name">Name</label>
-                <input type="text" id = "name" placeholder="Dein Name" required>
-                <label for="email">E-Mail</label>
-                <input type="email" id="email" placeholder="Deine E-Mail" required>
-                <label for="msg">Nachricht</label>
-                <textarea id="msg" placeholder="Deine Nachricht" rows="5" required></textarea>
+                <div id="textinput-wrapper">
+                    <label for="name">Name</label>
+                    <input type="text" id = "name" placeholder="Dein Name" required>
+                    <label for="email">E-Mail</label>
+                    <input type="email" id="email" placeholder="Deine E-Mail" required>
+                    <label for="msg">Nachricht</label>
+                    <textarea id="msg" placeholder="Deine Nachricht" rows="5" required></textarea>
+                </div>
                 <button type="submit" class="dark-button">Absenden</button>
             </form>
         </section>
