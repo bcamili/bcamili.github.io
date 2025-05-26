@@ -1,8 +1,8 @@
 const canvas = document.getElementById('background-canvas');
 const ctx = canvas.getContext('2d');
 
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+canvas.width = window.innerWidth+20;
+canvas.height = window.innerHeight+20;
 
 const lowColor = 'rgba(57, 62, 70, 1)';
 const midColor = 'rgba(148, 137, 121, 1)';
@@ -12,8 +12,8 @@ const pageContainer = document.getElementById("pageContainer")
 
 window.addEventListener('resize', () => {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    canvas.width = window.innerWidth+20;
+    canvas.height = window.innerHeight+20;
     reset()
 });
 
@@ -80,6 +80,7 @@ let circle = (pos, vel, rad) =>{
             }
 
             let newY = newCircle.position.y + direction
+            
             if(newY>canvas.height){
                 newY = newY - canvas.height
             }
@@ -87,6 +88,8 @@ let circle = (pos, vel, rad) =>{
             if(newY<0){
                 newY = canvas.height - newY
             }
+
+            
 
             newCircle.position.y = newY
         })
