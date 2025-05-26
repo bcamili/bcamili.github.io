@@ -3,14 +3,15 @@
 } */
 
 html{
-    --darkColor: rgb(34, 40, 49);
-    --lowColor: rgb(57, 62, 70);
-    --midColor: rgb(148, 137, 121);
-    --highlight: rgb(223, 208, 184);
-    --actionColor: rgb(195, 101, 50);
+    --darkColor: rgba(34, 40, 49, 1);
+    --darkColorT: rgba(34, 40, 49, 0.5);
+    --lowColor: rgba(57, 62, 70, 1);
+    --midColor: rgba(148, 137, 121, 1);
+    --highlight: rgba(223, 208, 184, 1);
+    --actionColor: rgba(195, 101, 50, 1);
 
     font-family: "Parkinsans";
-    font-size: 16px;
+    font-size: 15px;
     width: 100%;
     min-width: 320px;
     height: 100%;
@@ -51,10 +52,10 @@ p{
 
 #background-canvas{
     position: fixed;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
+    left: -10px;
+    top: -10px;
+    width: 120vw;
+    height: 120vh;
     z-index: -1;
     pointer-events: none;
 }
@@ -64,7 +65,7 @@ nav{
     flex-direction: row;
     align-items: center;
     background-color: var(--highlight);
-    font-size: 0.7em;
+    font-size: clamp(0.6em,1.5vw,1em);
     line-height: 1em;
     padding: 1em 0.7em;
     box-shadow: inset 0px 15px 15px -10px var(--midColor);
@@ -81,6 +82,15 @@ nav{
     display: block;
     font-family: "Permanent Marker";
     font-size: 1.2em;
+    padding: 0.9em .5em 0.85em 1.5em;
+    margin: -0.9em -.5em -0.85em -1.5em;
+    transition: color .3s, background-color .3s;
+}
+
+#logo:hover{
+    background-color: var(--lowColor);
+    color: var(--highlight);
+   
 }
 
 #nav-container{
@@ -91,9 +101,35 @@ nav{
     color: var(--darkColor);
 }
 
-nav a{
+#nav-container a{
     font-weight: bold;
     font-size: 1em;
+    padding: 0.4em 1em;
+    margin: -0.4em -1em;
+    border-radius: 2em;
+    transition: all .3s;
+}
+
+#nav-container a:hover{
+    background-color: var(--lowColor);
+    color: var(--highlight);
+    
+}
+
+.current{
+    font-weight: bold;
+    font-size: 1em;
+    padding: 0.4em 1em;
+    margin: -0.4em -1em;
+    border-radius: 2em;
+    transition: all .3s;
+    background-color: var(--lowColor);
+    color: var(--highlight);
+}
+
+#nav-container a:active{
+    background-color: var(--lowColor);
+    color: var(--highlight);
 }
 
 #home{
@@ -159,10 +195,11 @@ header img{
 }
 
 h1{
-    font-size: 1.3em;
+    font-size: 1.5em;
+    font-weight: inherit;
     margin: 0;
     margin-top: .5em;
-    text-align: center;
+    padding: 0 1rem;
 }
 
 .dark-button{
@@ -176,6 +213,8 @@ h1{
     padding: .5em 1em;
     border: none;
     text-align: center;
+    text-shadow: 0;
+    transition: text-shadow .3s, box-shadow .2s;
     box-shadow: 
         inset rgba(0,0,0,0.8) 0px 0px 2px 2px,
         inset rgba(255, 255, 255, 0.1) 2px 2px 2px 5px,
@@ -187,11 +226,14 @@ h1{
         rgba(0,0,0,0.8) -1px -1px 3px 0px,
         rgba(255, 255, 255, 0.25) -6px -6px 3px 0px,
         rgba(255, 255, 255, 0.25) -10px -10px 10px 0px
-
         ;
 }
 
-.dark-button:hover, .dark-button:active{
+.dark-button:hover{
+}
+
+
+.dark-button:active{
     box-shadow: 
         inset rgba(0,0,0,0.8) 0px 0px 4px 4px,
         inset rgba(255, 255, 255, 0.1) 3px 3px 2px 5px,
@@ -204,6 +246,7 @@ h1{
         rgba(255, 255, 255, 0.25) -6px -6px 3px 0px,
         rgba(255, 255, 255, 0.25) -10px -10px 10px 0px
     ;
+    text-shadow: none;
     padding: .55em 1em .45em 1em;
 }
 
@@ -306,6 +349,7 @@ h1{
     box-shadow: inset 0 0 0em 0.2em var(--midColor);
     padding: .45em .95em;
     border-radius: 1em;
+    transition: color .3s, background-color .3s;
 }
 
 .demo-button:hover{
@@ -329,9 +373,6 @@ h3{
     margin: 0;
 }
 
-#uebermich{
-}
-
 #uebermich-section{
     background-color: var(--lowColor);
     color: var(--highlight);
@@ -343,9 +384,6 @@ h3{
     margin: 0;
     padding: 0 .5em;
     text-align: center;
-}
-
-#kontakt{
 }
 
 #kontakt-section{
@@ -392,9 +430,7 @@ input[type=text], input[type=email], textarea{
         rgba(0,0,0,0.2) 4px 4px 10px 0px,
         rgba(0,0,0,0.4) -1px -1px 1.5px 0px,
         rgba(255, 255, 255, 0.125) -6px -6px 1.5px 0px,
-        rgba(255, 255, 255, 0.125) -10px -10px 5px 0px
-
-        ;
+        rgba(255, 255, 255, 0.125) -10px -10px 5px 0px;
 }
 
 button[type=submit]{
@@ -420,6 +456,107 @@ footer p{
 footer p a{
     font-size: 1em;
 }
+
+footer button{
+    border: none;
+    background: none;
+    color: inherit;
+    font-size: inherit;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.overlay{
+    border: none;
+    margin: 0;
+    padding: 0;
+    justify-self: center;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    background-color: transparent;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    max-width: 500px;
+    min-height: 100%;
+}
+
+.overlay::-webkit-scrollbar{
+    display: none;
+}
+
+.overlay::backdrop{
+    background-color: var(--darkColorT);
+    backdrop-filter: blur(3px);
+}
+
+.overlay-section{
+    background-color: var(--lowColor);
+    color: var(--highlight);
+    margin: 1em 0;
+    position: relative;
+}
+
+.overlay h2{
+    text-align: center;
+}
+
+.overlay h3{
+    font-size: 1em;
+}
+
+.overlay h4{
+    font-size: .9em;
+}
+
+.overlay h5{
+    font-size: .8em;
+}
+
+.overlay p{
+    align-self: baseline;
+    margin-top: 0;
+}
+
+.back-to-top{
+    font-size: 1em;
+    background-color: var(--lowColor);
+    color: var(--highlight);
+    padding: 0.25em 1em;
+    border-radius: 1em;
+    box-shadow: inset 0 0 0 .2em var(--midColor);
+    transition: color .2s, background-color .2s;
+}
+
+.back-to-top:hover{
+    background-color: var(--highlight);
+    color: var(--darkColor);
+}
+
+.quit{
+    position: absolute;
+    top: 0.75em;
+    right: 0.75em;
+    background-color: var(--lowColor);
+    color: var(--highlight);
+    font-family: "Permanent Marker";
+    border: none;
+    font-size: 1.125em;
+    box-shadow: inset 0 0 0 .2em var(--midColor);
+    font-weight: bold;
+    margin: 0;
+    padding: .3em .75em;
+    border-radius: 10em;
+    text-align: center;
+    transition: color .2s, background-color .2s;
+}
+
+#quit:hover, #quit:active{
+    background-color: var(--highlight);
+    color: var(--darkColor);
+}
+
+
 
 @media screen and (min-width:480px) {
     #logo-container{
@@ -556,10 +693,6 @@ footer p a{
 
 
 @media screen and (min-width:1175px) {
-    html{
-        font-size: 21px;
-    }
-
     #pageContainer{
         display: grid;
         grid-template-columns: repeat(4, 1fr); 
@@ -602,7 +735,7 @@ footer p a{
 
 @media screen and (min-width:1400px) {
     #pageContainer{
-        width: 1400px;
+        max-width: 1400px;
         justify-content: center;   
         align-self: center;
     }
