@@ -1,4 +1,5 @@
-import "./styles.css";
+import "../resources/styles/styles.css";
+
 import "./backgroundCanvas.js"
 
 const impressumDialog = document.getElementById("impressum-dialog")
@@ -45,3 +46,41 @@ logo.addEventListener("click", ()=>{
             old.classList.remove("current")
         }
 })
+
+
+const form = document.getElementsByTagName('form')[0];
+const notification = document.getElementById('form-notification-bg');
+
+form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const formData = new FormData(form);
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: json
+        })
+        .then(async (response) => {
+            let json = await response.json();
+            if (response.status == 200) {
+                notification.style.opacity = 1
+            } else {
+                console.log(response);
+                alert(json.message);
+            }
+        })
+        .catch(error => {
+            console.log(error);
+        })
+        .then(function() {
+            form.reset();
+            setTimeout(() => {
+                notification.style.opacity = 0
+            }, 3000);
+        });
+});
