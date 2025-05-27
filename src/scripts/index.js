@@ -24,15 +24,14 @@ datenschutzDialog.getElementsByTagName("button")[0].addEventListener("click",(()
 }))
 
 
-const nav = document.getElementById("nav-container");
-for (let child of nav.children){
+const nav = document.getElementsByClassName("nav-button");
+for (let child of nav){
     child.addEventListener("click", (e)=>{
         let old = document.getElementsByClassName("current")[0]
         if(old){
-            console.log(old)
             old.classList.remove("current")
         }
-        let current = e.target.closest("a");
+        let current = e.target.closest("div");
         current.classList.add("current")
     })
 }
@@ -68,6 +67,7 @@ form.addEventListener('submit', function(e) {
         .then(async (response) => {
             let json = await response.json();
             if (response.status == 200) {
+                notification.style.visibility = "visible"
                 notification.style.opacity = 1
             } else {
                 console.log(response);
