@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BenjaminCamili.de</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Permanent+Marker&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.png"><script defer src="main.js"></script></head>
+<body>
+    <canvas id="background-canvas"></canvas>
+    
+    <nav>
+        <div id="logo-container">
+            <a id="logo" href="#home">
+            </a>
+            <p>Benjamin
+            Camili.de</p>
+        </div>
+        <div id="nav-container">
+            <div class="nav-button">
+                <a href="#angebot"></a>
+                <p>Angebot</p>
+            </div>
+            |
+            <div class="nav-button">
+                <a href="#portfolio"></a>
+                <p>Portfolio</p>
+            </div>
+            |
+            <div class="nav-button">
+                <a href="#uebermich"> </a>
+                <p>Über mich</p>
+            </div>
+            |
+            <div class="nav-button">
+                <a href="#kontakt"></a>
+                <p>Kontakt</p>
+            </div>
+        </div>
+    </nav>
+    <div id="pageContainer">
+        <div id="home"></div>
+        <header id="hero">
+            <div id="header-pic-wrapper">
+                <img src="d91131458bd0cba1a5f2.jpg" alt="Ein Foto von Benjamin Camili">
+                <p id="text-in-picture">Benjamin Camili</p>
+            </div>
+            <div id="header-text-wrapper">
+                <h1>Web-Development by <strong>Benjamin Camili</strong></h1>
+                <p>Einfache, professionelle Websites für Selbstständige und kleine Unternehmen.</p>
+                <a id="callToAction" href="#kontakt" class="dark-button">
+                    <p>Website anfragen</p>
+                </a>
+            </div>
+        </header>
+        <div id="angebot"></div>
+        <section id="angebot-section">
+            <h2>Angebot</h2>
+            <ul>
+                <li>Moderne, responsive One-Page-Websites</li>
+                <li>Handgemachtes HTML, CSS und JavaScript - keine Templates</li>
+                <li>Kontaktformular, Impressum & DSGVO-Konformität</li>
+                <li>Eigene Domain & Mail-Adresse</li>
+                <li>Pflegeleichte, wartungsfreie Lösungen</li>
+            </ul>
+        </section>
+        <div id="portfolio"></div>
+        <section id="portfolio-section">
+            <h2>Portfolio</h2>
+            <div id="projects">
+                <div class="project">
+                    <h3>TodoApp</h3>
+                    <div class="project-content-wrapper">
+                        <div class="project-screenshot">
+                            <img src="19430d9a29e80c73dc6e.jpg" alt="Screenshot Web-App TodoApp">
+                        </div>
+                        <div class="project-text-wrapper">
+                            <p>Simples Online-Tool zur Organisierung von Projektaufgaben.</i></p>
+                            <div class="project-links-wrapper">
+                                <div class="github-link-bg">
+                                    <a href="https://github.com/bcamili/odin-todo-list" class="github-link"></a>
+                                </div>
+                                <a href="https://bcamili.github.io/odin-todo-list/" class="demo-button">
+                                    <p>Live-Demo</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <h3>BattleShip</h3>
+                     <div class="project-content-wrapper">
+                        <div class="project-screenshot">
+                            <img src="88ae59f3c80e12a95597.jpg" alt="Screenshot des Spiels Battleship">
+                        </div>
+                        <div class="project-text-wrapper">
+                            <p>Das klassische »Schiffe Versenken« als 1- oder 2-Spieler-Variante. <i>(Für Chrome Desktop)</i></p>
+                            <div class="project-links-wrapper">
+                                <div class="github-link-bg">
+                                    <a href="https://github.com/bcamili/BattleShip" class="github-link"></a>
+                                </div>
+                                <a href="https://bcamili.github.io/BattleShip/" class="demo-button">
+                                    <p>Live-Demo</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <h3>The Weather</h3>
+                    <div class="project-content-wrapper">
+                        <div class="project-screenshot">
+                            <img src="7f4438fc5a47444543f2.jpg" alt="Screenshot der Web-App The Weather">
+                        </div>
+                        <div class="project-text-wrapper">
+                            <p>Wetterabfrage via Visual Crossing API, mit an Wetterlage angepasstem Theme </i></p>
+                            <div class="project-links-wrapper">
+                                <div class="github-link-bg">
+                                    <a href="https://github.com/bcamili/WeatherApp" class="github-link"></a>
+                                </div>
+                                <a href="https://bcamili.github.io/WeatherApp/" class="demo-button">
+                                    <p>Live-Demo</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project" id="self-project">
+                    <h3 style="font-size: 1em;">BenjaminCamili.de</h3>
+                    <div class="project-text-wrapper">
+                        <p>Diese Portfolioseite – demonstriert Hosting mit GitHub Pages, eigener Domain und moderner Entwicklung.</p>
+                        <div class="project-links-wrapper">
+                            <div class="github-link-bg">
+                                <a href="https://github.com/bcamili/benjamincamili.de" class="github-link"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="uebermich"></div>
+        <section id="uebermich-section">
+            <h2>Über mich</h2>
+            <p>Ich bin Benjamin Camili, freiberuflicher Webentwickler aus Köln. Ich komme ursprünglich aus der Medientechnologie und baue Websites mit HTML, CSS und JavaScript – klar, wartbar und effektiv.</p>
+        </section>
+        <div id="kontakt"></div>
+        <section id="kontakt-section">
+            <div id="form-notification-bg">
+                <div id="form-notification">
+                    Vielen Dank!
+                </div>
+            </div>
+            <h2>Kontakt</h2>
+            <p>Schreib mir eine Nachricht oder eine E-Mail an <strong>contact@benjamincamili.de</strong>.</p>
+            <form class="contact-form" method="POST">
+                <input type="hidden" name="access_key" value="0b8507b5-261f-4b21-8d8b-ca11f608edbf">
+                <input type="hidden" name="redirect" value="http://192.168.0.29:8080">
+                <div id="textinput-wrapper">
+                    <label for="name">Name</label>
+                    <input type="text" id = "name" name="name" placeholder="Dein Name" required>
+                    <label for="email">E-Mail</label>
+                    <input type="email" id="email" name="email" placeholder="Deine E-Mail" required>
+                    <label for="msg">Nachricht</label>
+                    <textarea id="msg" placeholder="Deine Nachricht" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="dark-button">
+                    <p>Absenden</p>
+                </button>
+            </form>
+        </section>
+        
+    </div>
+    <footer>
+            <p>&copy; 2025 Benjamin Camili – <button id="impressum-button">Impressum</button> – <button id="datenschutz-button">Datenschutz</button></p>
+    </footer>
+    <dialog id="impressum-dialog" class="overlay">
+        <section id="impressum-section" class="overlay-section">
+            <button class="quit">X</button>
+            <h2>Impressum</h2>
+            <p>Benjamin Camili<br />
+                benjamincamili.com<br />
+                Leyendeckerstr. 69a<br />
+                50825 Köln</p>
+                
+            <h3>Kontakt</h3>
+            <p>Telefon: +49 163 143 7 134<br />
+                E-Mail: info@benjamincamili.de</p>
+                
+            <h3>Redaktionell verantwortlich</h3>
+            <p>Benjamin Camili<br />
+               Leyendeckerstr. 69a<br />
+               50825 Köln</p>
+                        
+            <h3>Verbraucher&shy;streit&shy;beilegung/Universal&shy;schlichtungs&shy;stelle</h3>
+            <p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+            
+            <p>Quelle: <a href="https://www.e-recht24.de">eRecht24</a></p>
+        </section>
+    </dialog>
+
+    <dialog id="datenschutz-dialog" class="overlay">
+        <div id="datenschutz"></div>
+        <section id="datenschutz-section" class="overlay-section">
+            <button class="quit">X</button>
+            <h2>Datenschutz&shy;erkl&auml;rung</h2>
+<h3>1. Datenschutz auf einen Blick</h3>
+<h4>Allgemeine Hinweise</h4> <p>Die folgenden Hinweise geben einen einfachen &Uuml;berblick dar&uuml;ber,
+was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind
+alle Daten, mit denen Sie pers&ouml;nlich identifiziert werden k&ouml;nnen. Ausf&uuml;hrliche Informationen zum
+Thema Datenschutz entnehmen Sie unserer unter diesem Text aufgef&uuml;hrten
+Datenschutzerkl&auml;rung.</p>
+<h4>Datenerfassung auf dieser Website</h4> <h5>Wer ist verantwortlich f&uuml;r die Datenerfassung auf dieser
+Website?</h5> <p>Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen
+Kontaktdaten k&ouml;nnen Sie dem Abschnitt &bdquo;Hinweis zur Verantwortlichen Stelle&ldquo; in dieser
+Datenschutzerkl&auml;rung entnehmen.</p> <h5>Wie erfassen wir Ihre Daten?</h5> <p>Ihre Daten werden zum
+einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z.&nbsp;B. um Daten handeln, die Sie in ein
+Kontaktformular eingeben.</p> <p>Andere Daten werden automatisch oder nach Ihrer Einwilligung beim Besuch
+der Website durch unsere IT-Systeme erfasst. Das sind vor allem technische Daten (z.&nbsp;B. Internetbrowser,
+Betriebssystem oder Uhrzeit des Seitenaufrufs). Die Erfassung dieser Daten erfolgt automatisch, sobald Sie diese
+Website betreten.</p> <h5>Wof&uuml;r nutzen wir Ihre Daten?</h5> <p>Ein Teil der Daten wird erhoben, um eine
+fehlerfreie Bereitstellung der Website zu gew&auml;hrleisten. Andere Daten k&ouml;nnen zur Analyse Ihres
+Nutzerverhaltens verwendet werden. Sofern &uuml;ber die Website Vertr&auml;ge geschlossen oder angebahnt
+werden k&ouml;nnen, werden die &uuml;bermittelten Daten auch f&uuml;r Vertragsangebote, Bestellungen oder
+sonstige Auftragsanfragen verarbeitet.</p> <h5>Welche Rechte haben Sie bez&uuml;glich Ihrer Daten?</h5>
+<p>Sie haben jederzeit das Recht, unentgeltlich Auskunft &uuml;ber Herkunft, Empf&auml;nger und Zweck Ihrer
+gespeicherten personenbezogenen Daten zu erhalten. Sie haben au&szlig;erdem ein Recht, die Berichtigung oder
+L&ouml;schung dieser Daten zu verlangen. Wenn Sie eine Einwilligung zur Datenverarbeitung erteilt haben,
+k&ouml;nnen Sie diese Einwilligung jederzeit f&uuml;r die Zukunft widerrufen. Au&szlig;erdem haben Sie das Recht,
+unter bestimmten Umst&auml;nden die Einschr&auml;nkung der Verarbeitung Ihrer personenbezogenen Daten zu
+verlangen. Des Weiteren steht Ihnen ein Beschwerderecht bei der zust&auml;ndigen Aufsichtsbeh&ouml;rde
+zu.</p> <p>Hierzu sowie zu weiteren Fragen zum Thema Datenschutz k&ouml;nnen Sie sich jederzeit an uns
+wenden.</p>
+<h3>2. Hosting</h3>
+<p>Wir hosten die Inhalte unserer Website bei folgendem Anbieter:</p>
+<h4>Externes Hosting</h4> <p>Diese Website wird extern gehostet. Die personenbezogenen Daten, die auf dieser
+Website erfasst werden, werden auf den Servern des Hosters / der Hoster gespeichert. Hierbei kann es sich
+v.&nbsp;a. um IP-Adressen, Kontaktanfragen, Meta- und Kommunikationsdaten, Vertragsdaten, Kontaktdaten,
+Namen, Websitezugriffe und sonstige Daten, die &uuml;ber eine Website generiert werden, handeln.</p> <p>Das
+externe Hosting erfolgt zum Zwecke der Vertragserf&uuml;llung gegen&uuml;ber unseren potenziellen und
+bestehenden Kunden (Art. 6 Abs. 1 lit. b DSGVO) und im Interesse einer sicheren, schnellen und effizienten
+Bereitstellung unseres Online-Angebots durch einen professionellen Anbieter (Art. 6 Abs. 1 lit. f DSGVO). Sofern
+eine entsprechende Einwilligung abgefragt wurde, erfolgt die Verarbeitung ausschlie&szlig;lich auf Grundlage von
+Art. 6 Abs. 1 lit. a DSGVO und &sect; 25 Abs. 1 TDDDG, soweit die Einwilligung die Speicherung von Cookies oder
+den Zugriff auf Informationen im Endger&auml;t des Nutzers (z.&nbsp;B. Device-Fingerprinting) im Sinne des
+TDDDG umfasst. Die Einwilligung ist jederzeit widerrufbar.</p> <p>Unser(e) Hoster wird bzw. werden Ihre Daten
+nur insoweit verarbeiten, wie dies zur Erf&uuml;llung seiner Leistungspflichten erforderlich ist und unsere
+Weisungen in Bezug auf diese Daten befolgen.</p> <p>Wir setzen folgende(n) Hoster ein:</p>
+<p>GitHub, Inc<br />
+88 Colin P Kelly Jr St<br />
+San Francisco, CA 94107, USA</p>
+<h3>3. Allgemeine Hinweise und Pflicht&shy;informationen</h3>
+<h4>Datenschutz</h4> <p>Die Betreiber dieser Seiten nehmen den Schutz Ihrer pers&ouml;nlichen Daten sehr
+ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend den gesetzlichen
+Datenschutzvorschriften sowie dieser Datenschutzerkl&auml;rung.</p> <p>Wenn Sie diese Website benutzen,
+werden verschiedene personenbezogene Daten erhoben. Personenbezogene Daten sind Daten, mit denen Sie
+pers&ouml;nlich identifiziert werden k&ouml;nnen. Die vorliegende Datenschutzerkl&auml;rung erl&auml;utert,
+welche Daten wir erheben und wof&uuml;r wir sie nutzen. Sie erl&auml;utert auch, wie und zu welchem Zweck das
+geschieht.</p> <p>Wir weisen darauf hin, dass die Daten&uuml;bertragung im Internet (z.&nbsp;B. bei der
+Kommunikation per E-Mail) Sicherheitsl&uuml;cken aufweisen kann. Ein l&uuml;ckenloser Schutz der Daten vor
+dem Zugriff durch Dritte ist nicht m&ouml;glich.</p>
+<h4>Hinweis zur verantwortlichen Stelle</h4> <p>Die verantwortliche Stelle f&uuml;r die Datenverarbeitung auf
+dieser Website ist:</p> <p>Beispielfirma<br />
+Musterweg 10<br />
+90210 Musterstadt</p>
+<p>Telefon: +49 (0) 123 44 55 66<br />
+E-Mail: info@beispielfirma.de</p>
+ <p>Verantwortliche Stelle ist die nat&uuml;rliche oder juristische Person, die allein oder gemeinsam mit anderen
+&uuml;ber die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z.&nbsp;B. Namen, E-Mail-
+Adressen o. &Auml;.) entscheidet.</p>
+<h4>Speicherdauer</h4> <p>Soweit innerhalb dieser Datenschutzerkl&auml;rung keine speziellere Speicherdauer
+genannt wurde, verbleiben Ihre personenbezogenen Daten bei uns, bis der Zweck f&uuml;r die Datenverarbeitung
+entf&auml;llt. Wenn Sie ein berechtigtes L&ouml;schersuchen geltend machen oder eine Einwilligung zur
+Datenverarbeitung widerrufen, werden Ihre Daten gel&ouml;scht, sofern wir keine anderen rechtlich
+zul&auml;ssigen Gr&uuml;nde f&uuml;r die Speicherung Ihrer personenbezogenen Daten haben (z.&nbsp;B. steuer-
+oder handelsrechtliche Aufbewahrungsfristen); im letztgenannten Fall erfolgt die L&ouml;schung nach Fortfall
+dieser Gr&uuml;nde.</p>
+<h4>Allgemeine Hinweise zu den Rechtsgrundlagen der Datenverarbeitung auf dieser Website</h4> <p>Sofern Sie
+in die Datenverarbeitung eingewilligt haben, verarbeiten wir Ihre personenbezogenen Daten auf Grundlage von Art.
+6 Abs. 1 lit. a DSGVO bzw. Art. 9 Abs. 2 lit. a DSGVO, sofern besondere Datenkategorien nach Art. 9 Abs. 1 DSGVO
+verarbeitet werden. Im Falle einer ausdr&uuml;cklichen Einwilligung in die &Uuml;bertragung personenbezogener
+Daten in Drittstaaten erfolgt die Datenverarbeitung au&szlig;erdem auf Grundlage von Art. 49 Abs. 1 lit. a DSGVO.
+Sofern Sie in die Speicherung von Cookies oder in den Zugriff auf Informationen in Ihr Endger&auml;t (z.&nbsp;B. via
+Device-Fingerprinting) eingewilligt haben, erfolgt die Datenverarbeitung zus&auml;tzlich auf Grundlage von &sect;
+25 Abs. 1 TDDDG. Die Einwilligung ist jederzeit widerrufbar. Sind Ihre Daten zur Vertragserf&uuml;llung oder zur
+Durchf&uuml;hrung vorvertraglicher Ma&szlig;nahmen erforderlich, verarbeiten wir Ihre Daten auf Grundlage des
+Art. 6 Abs. 1 lit. b DSGVO. Des Weiteren verarbeiten wir Ihre Daten, sofern diese zur Erf&uuml;llung einer
+rechtlichen Verpflichtung erforderlich sind auf Grundlage von Art. 6 Abs. 1 lit. c DSGVO. Die Datenverarbeitung
+kann ferner auf Grundlage unseres berechtigten Interesses nach Art. 6 Abs. 1 lit. f DSGVO erfolgen. &Uuml;ber die
+jeweils im Einzelfall einschl&auml;gigen Rechtsgrundlagen wird in den folgenden Abs&auml;tzen dieser
+Datenschutzerkl&auml;rung informiert.</p>
+<h4>Empf&auml;nger von personenbezogenen Daten</h4> <p>Im Rahmen unserer Gesch&auml;ftst&auml;tigkeit
+arbeiten wir mit verschiedenen externen Stellen zusammen. Dabei ist teilweise auch eine &Uuml;bermittlung von
+personenbezogenen Daten an diese externen Stellen erforderlich. Wir geben personenbezogene Daten nur dann an
+externe Stellen weiter, wenn dies im Rahmen einer Vertragserf&uuml;llung erforderlich ist, wenn wir gesetzlich
+hierzu verpflichtet sind (z.&nbsp;B. Weitergabe von Daten an Steuerbeh&ouml;rden), wenn wir ein berechtigtes
+Interesse nach Art. 6 Abs. 1 lit. f DSGVO an der Weitergabe haben oder wenn eine sonstige Rechtsgrundlage die
+Datenweitergabe erlaubt. Beim Einsatz von Auftragsverarbeitern geben wir personenbezogene Daten unserer
+Kunden nur auf Grundlage eines g&uuml;ltigen Vertrags &uuml;ber Auftragsverarbeitung weiter. Im Falle einer
+gemeinsamen Verarbeitung wird ein Vertrag &uuml;ber gemeinsame Verarbeitung geschlossen.</p>
+<h4>Widerruf Ihrer Einwilligung zur Datenverarbeitung</h4> <p>Viele Datenverarbeitungsvorg&auml;nge sind
+nur mit Ihrer ausdr&uuml;cklichen Einwilligung m&ouml;glich. Sie k&ouml;nnen eine bereits erteilte Einwilligung
+jederzeit widerrufen. Die Rechtm&auml;&szlig;igkeit der bis zum Widerruf erfolgten Datenverarbeitung bleibt vom
+Widerruf unber&uuml;hrt.</p>
+<h4>Widerspruchsrecht gegen die Datenerhebung in besonderen F&auml;llen sowie gegen Direktwerbung (Art. 21
+DSGVO)</h4> <p>WENN DIE DATENVERARBEITUNG AUF GRUNDLAGE VON ART. 6 ABS. 1 LIT. E ODER F
+DSGVO ERFOLGT, HABEN SIE JEDERZEIT DAS RECHT, AUS GR&Uuml;NDEN, DIE SICH AUS IHRER
+BESONDEREN SITUATION ERGEBEN, GEGEN DIE VERARBEITUNG IHRER PERSONENBEZOGENEN DATEN
+WIDERSPRUCH EINZULEGEN; DIES GILT AUCH F&Uuml;R EIN AUF DIESE BESTIMMUNGEN GEST&Uuml;TZTES
+PROFILING. DIE JEWEILIGE RECHTSGRUNDLAGE, AUF DENEN EINE VERARBEITUNG BERUHT, ENTNEHMEN
+SIE DIESER DATENSCHUTZERKL&Auml;RUNG. WENN SIE WIDERSPRUCH EINLEGEN, WERDEN WIR IHRE
+BETROFFENEN PERSONENBEZOGENEN DATEN NICHT MEHR VERARBEITEN, ES SEI DENN, WIR
+K&Ouml;NNEN ZWINGENDE SCHUTZW&Uuml;RDIGE GR&Uuml;NDE F&Uuml;R DIE VERARBEITUNG
+NACHWEISEN, DIE IHRE INTERESSEN, RECHTE UND FREIHEITEN &Uuml;BERWIEGEN ODER DIE
+VERARBEITUNG DIENT DER GELTENDMACHUNG, AUS&Uuml;BUNG ODER VERTEIDIGUNG VON
+RECHTSANSPR&Uuml;CHEN (WIDERSPRUCH NACH ART. 21 ABS. 1 DSGVO).</p> <p>WERDEN IHRE
+PERSONENBEZOGENEN DATEN VERARBEITET, UM DIREKTWERBUNG ZU BETREIBEN, SO HABEN SIE DAS
+RECHT, JEDERZEIT WIDERSPRUCH GEGEN DIE VERARBEITUNG SIE BETREFFENDER PERSONENBEZOGENER
+DATEN ZUM ZWECKE DERARTIGER WERBUNG EINZULEGEN; DIES GILT AUCH F&Uuml;R DAS PROFILING,
+SOWEIT ES MIT SOLCHER DIREKTWERBUNG IN VERBINDUNG STEHT. WENN SIE WIDERSPRECHEN,
+WERDEN IHRE PERSONENBEZOGENEN DATEN ANSCHLIESSEND NICHT MEHR ZUM ZWECKE DER
+DIREKTWERBUNG VERWENDET (WIDERSPRUCH NACH ART. 21 ABS. 2 DSGVO).</p>
+<h4>Beschwerde&shy;recht bei der zust&auml;ndigen Aufsichts&shy;beh&ouml;rde</h4> <p>Im Falle von
+Verst&ouml;&szlig;en gegen die DSGVO steht den Betroffenen ein Beschwerderecht bei einer
+Aufsichtsbeh&ouml;rde, insbesondere in dem Mitgliedstaat ihres gew&ouml;hnlichen Aufenthalts, ihres
+Arbeitsplatzes oder des Orts des mutma&szlig;lichen Versto&szlig;es zu. Das Beschwerderecht besteht
+unbeschadet anderweitiger verwaltungsrechtlicher oder gerichtlicher Rechtsbehelfe.</p>
+<h4>Recht auf Daten&shy;&uuml;bertrag&shy;barkeit</h4> <p>Sie haben das Recht, Daten, die wir auf Grundlage
+Ihrer Einwilligung oder in Erf&uuml;llung eines Vertrags automatisiert verarbeiten, an sich oder an einen Dritten in
+einem g&auml;ngigen, maschinenlesbaren Format aush&auml;ndigen zu lassen. Sofern Sie die direkte
+&Uuml;bertragung der Daten an einen anderen Verantwortlichen verlangen, erfolgt dies nur, soweit es technisch
+machbar ist.</p>
+<h4>Auskunft, Berichtigung und L&ouml;schung</h4> <p>Sie haben im Rahmen der geltenden gesetzlichen
+Bestimmungen jederzeit das Recht auf unentgeltliche Auskunft &uuml;ber Ihre gespeicherten personenbezogenen
+Daten, deren Herkunft und Empf&auml;nger und den Zweck der Datenverarbeitung und ggf. ein Recht auf
+Berichtigung oder L&ouml;schung dieser Daten. Hierzu sowie zu weiteren Fragen zum Thema personenbezogene
+Daten k&ouml;nnen Sie sich jederzeit an uns wenden.</p>
+<h4>Recht auf Einschr&auml;nkung der Verarbeitung</h4> <p>Sie haben das Recht, die Einschr&auml;nkung der
+Verarbeitung Ihrer personenbezogenen Daten zu verlangen. Hierzu k&ouml;nnen Sie sich jederzeit an uns wenden.
+Das Recht auf Einschr&auml;nkung der Verarbeitung besteht in folgenden F&auml;llen:</p> <ul> <li>Wenn Sie die
+Richtigkeit Ihrer bei uns gespeicherten personenbezogenen Daten bestreiten, ben&ouml;tigen wir in der Regel Zeit,
+um dies zu &uuml;berpr&uuml;fen. F&uuml;r die Dauer der Pr&uuml;fung haben Sie das Recht, die
+Einschr&auml;nkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.</li> <li>Wenn die
+Verarbeitung Ihrer personenbezogenen Daten unrechtm&auml;&szlig;ig geschah/geschieht, k&ouml;nnen Sie statt
+der L&ouml;schung die Einschr&auml;nkung der Datenverarbeitung verlangen.</li> <li>Wenn wir Ihre
+personenbezogenen Daten nicht mehr ben&ouml;tigen, Sie sie jedoch zur Aus&uuml;bung, Verteidigung oder
+Geltendmachung von Rechtsanspr&uuml;chen ben&ouml;tigen, haben Sie das Recht, statt der L&ouml;schung die
+Einschr&auml;nkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.</li> <li>Wenn Sie einen
+Widerspruch nach Art. 21 Abs. 1 DSGVO eingelegt haben, muss eine Abw&auml;gung zwischen Ihren und unseren
+Interessen vorgenommen werden. Solange noch nicht feststeht, wessen Interessen &uuml;berwiegen, haben Sie das
+Recht, die Einschr&auml;nkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.</li> </ul>
+<p>Wenn Sie die Verarbeitung Ihrer personenbezogenen Daten eingeschr&auml;nkt haben, d&uuml;rfen diese
+Daten &ndash; von ihrer Speicherung abgesehen &ndash; nur mit Ihrer Einwilligung oder zur Geltendmachung,
+Aus&uuml;bung oder Verteidigung von Rechtsanspr&uuml;chen oder zum Schutz der Rechte einer anderen
+nat&uuml;rlichen oder juristischen Person oder aus Gr&uuml;nden eines wichtigen &ouml;ffentlichen Interesses der
+Europ&auml;ischen Union oder eines Mitgliedstaats verarbeitet werden.</p>
+<h4>SSL- bzw. TLS-Verschl&uuml;sselung</h4> <p>Diese Seite nutzt aus Sicherheitsgr&uuml;nden und zum Schutz
+der &Uuml;bertragung vertraulicher Inhalte, wie zum Beispiel Bestellungen oder Anfragen, die Sie an uns als
+Seitenbetreiber senden, eine SSL- bzw. TLS-Verschl&uuml;sselung. Eine verschl&uuml;sselte Verbindung erkennen
+Sie daran, dass die Adresszeile des Browsers von &bdquo;http://&ldquo; auf &bdquo;https://&ldquo; wechselt und
+an dem Schloss-Symbol in Ihrer Browserzeile.</p> <p>Wenn die SSL- bzw. TLS-Verschl&uuml;sselung aktiviert ist,
+k&ouml;nnen die Daten, die Sie an uns &uuml;bermitteln, nicht von Dritten mitgelesen werden.</p>
+<h4>Widerspruch gegen Werbe-E-Mails</h4> <p>Der Nutzung von im Rahmen der Impressumspflicht
+ver&ouml;ffentlichten Kontaktdaten zur &Uuml;bersendung von nicht ausdr&uuml;cklich angeforderter Werbung
+und Informationsmaterialien wird hiermit widersprochen. Die Betreiber der Seiten behalten sich ausdr&uuml;cklich
+rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-E-Mails,
+vor.</p>
+<h3>4. Datenerfassung auf dieser Website</h3>
+<h4>Cookies</h4> <p>Unsere Internetseiten verwenden so genannte &bdquo;Cookies&ldquo;. Cookies sind kleine
+Datenpakete und richten auf Ihrem Endger&auml;t keinen Schaden an. Sie werden entweder vor&uuml;bergehend
+f&uuml;r die Dauer einer Sitzung (Session-Cookies) oder dauerhaft (permanente Cookies) auf Ihrem Endger&auml;t
+gespeichert. Session-Cookies werden nach Ende Ihres Besuchs automatisch gel&ouml;scht. Permanente Cookies
+bleiben auf Ihrem Endger&auml;t gespeichert, bis Sie diese selbst l&ouml;schen oder eine automatische
+L&ouml;schung durch Ihren Webbrowser erfolgt.</p> <p>Cookies k&ouml;nnen von uns (First-Party-Cookies) oder
+von Drittunternehmen stammen (sog. Third-Party-Cookies). Third-Party-Cookies erm&ouml;glichen die Einbindung
+bestimmter Dienstleistungen von Drittunternehmen innerhalb von Webseiten (z.&nbsp;B. Cookies zur Abwicklung
+von Zahlungsdienstleistungen).</p> <p>Cookies haben verschiedene Funktionen. Zahlreiche Cookies sind technisch
+notwendig, da bestimmte Webseitenfunktionen ohne diese nicht funktionieren w&uuml;rden (z.&nbsp;B. die
+Warenkorbfunktion oder die Anzeige von Videos). Andere Cookies k&ouml;nnen zur Auswertung des
+Nutzerverhaltens oder zu Werbezwecken verwendet werden.</p> <p>Cookies, die zur Durchf&uuml;hrung des
+elektronischen Kommunikationsvorgangs, zur Bereitstellung bestimmter, von Ihnen erw&uuml;nschter Funktionen
+(z.&nbsp;B. f&uuml;r die Warenkorbfunktion) oder zur Optimierung der Website (z.&nbsp;B. Cookies zur Messung
+des Webpublikums) erforderlich sind (notwendige Cookies), werden auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO
+gespeichert, sofern keine andere Rechtsgrundlage angegeben wird. Der Websitebetreiber hat ein berechtigtes
+Interesse an der Speicherung von notwendigen Cookies zur technisch fehlerfreien und optimierten Bereitstellung
+seiner Dienste. Sofern eine Einwilligung zur Speicherung von Cookies und vergleichbaren
+Wiedererkennungstechnologien abgefragt wurde, erfolgt die Verarbeitung ausschlie&szlig;lich auf Grundlage dieser
+Einwilligung (Art. 6 Abs. 1 lit. a DSGVO und &sect; 25 Abs. 1 TDDDG); die Einwilligung ist jederzeit widerrufbar.</p>
+<p>Sie k&ouml;nnen Ihren Browser so einstellen, dass Sie &uuml;ber das Setzen von Cookies informiert werden und
+Cookies nur im Einzelfall erlauben, die Annahme von Cookies f&uuml;r bestimmte F&auml;lle oder generell
+ausschlie&szlig;en sowie das automatische L&ouml;schen der Cookies beim Schlie&szlig;en des Browsers aktivieren.
+Bei der Deaktivierung von Cookies kann die Funktionalit&auml;t dieser Website eingeschr&auml;nkt sein.</p>
+<p>Welche Cookies und Dienste auf dieser Website eingesetzt werden, k&ouml;nnen Sie dieser
+Datenschutzerkl&auml;rung entnehmen.</p>
+<h4>Kontaktformular</h4> <p>Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre
+Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung
+der Anfrage und f&uuml;r den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre
+Einwilligung weiter.</p> <p>Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO,
+sofern Ihre Anfrage mit der Erf&uuml;llung eines Vertrags zusammenh&auml;ngt oder zur Durchf&uuml;hrung
+vorvertraglicher Ma&szlig;nahmen erforderlich ist. In allen &uuml;brigen F&auml;llen beruht die Verarbeitung auf
+unserem berechtigten Interesse an der effektiven Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f
+DSGVO) oder auf Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) sofern diese abgefragt wurde; die Einwilligung ist
+jederzeit widerrufbar.</p> <p>Die von Ihnen im Kontaktformular eingegebenen Daten verbleiben bei uns, bis Sie
+uns zur L&ouml;schung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck f&uuml;r die
+Datenspeicherung entf&auml;llt (z.&nbsp;B. nach abgeschlossener Bearbeitung Ihrer Anfrage). Zwingende
+gesetzliche Bestimmungen &ndash; insbesondere Aufbewahrungsfristen &ndash; bleiben unber&uuml;hrt.</p>
+<h4>Anfrage per E-Mail, Telefon oder Telefax</h4> <p>Wenn Sie uns per E-Mail, Telefon oder Telefax
+kontaktieren, wird Ihre Anfrage inklusive aller daraus hervorgehenden personenbezogenen Daten (Name, Anfrage)
+zum Zwecke der Bearbeitung Ihres Anliegens bei uns gespeichert und verarbeitet. Diese Daten geben wir nicht ohne
+Ihre Einwilligung weiter.</p> <p>Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b
+DSGVO, sofern Ihre Anfrage mit der Erf&uuml;llung eines Vertrags zusammenh&auml;ngt oder zur
+Durchf&uuml;hrung vorvertraglicher Ma&szlig;nahmen erforderlich ist. In allen &uuml;brigen F&auml;llen beruht
+die Verarbeitung auf unserem berechtigten Interesse an der effektiven Bearbeitung der an uns gerichteten
+Anfragen (Art. 6 Abs. 1 lit. f DSGVO) oder auf Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) sofern diese abgefragt
+wurde; die Einwilligung ist jederzeit widerrufbar.</p> <p>Die von Ihnen an uns per Kontaktanfragen
+&uuml;bersandten Daten verbleiben bei uns, bis Sie uns zur L&ouml;schung auffordern, Ihre Einwilligung zur
+Speicherung widerrufen oder der Zweck f&uuml;r die Datenspeicherung entf&auml;llt (z.&nbsp;B. nach
+abgeschlossener Bearbeitung Ihres Anliegens). Zwingende gesetzliche Bestimmungen &ndash; insbesondere
+gesetzliche Aufbewahrungsfristen &ndash; bleiben unber&uuml;hrt.</p>
+<h3>5. Plugins und Tools</h3>
+<h4>YouTube mit erweitertem Datenschutz</h4> <p>Diese Website bindet Videos der Website YouTube ein.
+Betreiber der Website ist die Google Ireland Limited (&bdquo;Google&rdquo;), Gordon House, Barrow Street,
+Dublin 4, Irland.</p> <p>Wenn Sie eine dieser Website besuchen, auf denen YouTube eingebunden ist, wird eine
+Verbindung zu den Servern von YouTube hergestellt. Dabei wird dem YouTube-Server mitgeteilt, welche unserer
+Seiten Sie besucht haben. Wenn Sie in Ihrem YouTube-Account eingeloggt sind, erm&ouml;glichen Sie YouTube, Ihr
+Surfverhalten direkt Ihrem pers&ouml;nlichen Profil zuzuordnen. Dies k&ouml;nnen Sie verhindern, indem Sie sich
+aus Ihrem YouTube-Account ausloggen.</p> <p>Wir nutzen YouTube im erweiterten Datenschutzmodus. Videos,
+die im erweiterten Datenschutzmodus abgespielt werden, werden nach Aussage von YouTube nicht zur
+Personalisierung des Surfens auf YouTube eingesetzt. Anzeigen, die im erweiterten Datenschutzmodus ausgespielt
+werden, sind ebenfalls nicht personalisiert. Im erweiterten Datenschutzmodus werden keine Cookies gesetzt.
+Stattdessen werden jedoch sogenannte Local Storage Elemente im Browser des Users gespeichert, die &auml;hnlich
+wie Cookies personenbezogene Daten beinhalten und zur Wiedererkennung eingesetzt werden k&ouml;nnen.
+Details zum erweiterten Datenschutzmodus finden Sie hier: <a
+href="https://support.google.com/youtube/answer/171780" target="_blank" rel="noopener
+noreferrer">https://support.google.com/youtube/answer/171780</a>.</p> <p>Gegebenenfalls k&ouml;nnen nach
+der Aktivierung eines YouTube-Videos weitere Datenverarbeitungsvorg&auml;nge ausgel&ouml;st werden, auf die
+wir keinen Einfluss haben.</p> <p>Die Nutzung von YouTube erfolgt im Interesse einer ansprechenden Darstellung
+unserer Online-Angebote. Dies stellt ein berechtigtes Interesse im Sinne von Art. 6 Abs. 1 lit. f DSGVO dar. Sofern
+eine entsprechende Einwilligung abgefragt wurde, erfolgt die Verarbeitung ausschlie&szlig;lich auf Grundlage von
+Art. 6 Abs. 1 lit. a DSGVO und &sect; 25 Abs. 1 TDDDG, soweit die Einwilligung die Speicherung von Cookies oder
+den Zugriff auf Informationen im Endger&auml;t des Nutzers (z.&nbsp;B. Device-Fingerprinting) im Sinne des
+TDDDG umfasst. Die Einwilligung ist jederzeit widerrufbar.</p> <p>Weitere Informationen &uuml;ber Datenschutz
+bei YouTube finden Sie in deren Datenschutzerkl&auml;rung unter: <a
+href="https://policies.google.com/privacy?hl=de" target="_blank" rel="noopener
+noreferrer">https://policies.google.com/privacy?hl=de</a>.</p>
+<p>Das Unternehmen verf&uuml;gt &uuml;ber eine Zertifizierung nach dem &bdquo;EU-US Data Privacy
+Framework&ldquo; (DPF). Der DPF ist ein &Uuml;bereinkommen zwischen der Europ&auml;ischen Union und den
+USA, der die Einhaltung europ&auml;ischer Datenschutzstandards bei Datenverarbeitungen in den USA
+gew&auml;hrleisten soll. Jedes nach dem DPF zertifizierte Unternehmen verpflichtet sich, diese
+Datenschutzstandards einzuhalten. Weitere Informationen hierzu erhalten Sie vom Anbieter unter folgendem Link:
+<a href="https://www.dataprivacyframework.gov/participant/5780" target="_blank" rel="noopener
+noreferrer">https://www.dataprivacyframework.gov/participant/5780</a>.</p>
+<h4>Google Fonts</h4> <p>Diese Seite nutzt zur einheitlichen Darstellung von Schriftarten so genannte Google
+Fonts, die von Google bereitgestellt werden. Beim Aufruf einer Seite l&auml;dt Ihr Browser die ben&ouml;tigten
+Fonts in ihren Browsercache, um Texte und Schriftarten korrekt anzuzeigen.</p> <p>Zu diesem Zweck muss der
+von Ihnen verwendete Browser Verbindung zu den Servern von Google aufnehmen. Hierdurch erlangt Google
+Kenntnis dar&uuml;ber, dass &uuml;ber Ihre IP-Adresse diese Website aufgerufen wurde. Die Nutzung von Google
+Fonts erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Der Websitebetreiber hat ein berechtigtes Interesse an
+der einheitlichen Darstellung des Schriftbildes auf seiner Website. Sofern eine entsprechende Einwilligung
+abgefragt wurde, erfolgt die Verarbeitung ausschlie&szlig;lich auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO und
+&sect; 25 Abs. 1 TDDDG, soweit die Einwilligung die Speicherung von Cookies oder den Zugriff auf Informationen im
+Endger&auml;t des Nutzers (z.&nbsp;B. Device-Fingerprinting) im Sinne des TDDDG umfasst. Die Einwilligung ist
+jederzeit widerrufbar.</p> <p>Wenn Ihr Browser Google Fonts nicht unterst&uuml;tzt, wird eine Standardschrift
+von Ihrem Computer genutzt.</p> <p>Weitere Informationen zu Google Fonts finden Sie unter <a
+href="https://developers.google.com/fonts/faq" target="_blank" rel="noopener
+noreferrer">https://developers.google.com/fonts/faq</a> und in der Datenschutzerkl&auml;rung von Google: <a
+href="https://policies.google.com/privacy?hl=de" target="_blank" rel="noopener
+noreferrer">https://policies.google.com/privacy?hl=de</a>.</p>
+<p>Das Unternehmen verf&uuml;gt &uuml;ber eine Zertifizierung nach dem &bdquo;EU-US Data Privacy
+Framework&ldquo; (DPF). Der DPF ist ein &Uuml;bereinkommen zwischen der Europ&auml;ischen Union und den
+USA, der die Einhaltung europ&auml;ischer Datenschutzstandards bei Datenverarbeitungen in den USA
+gew&auml;hrleisten soll. Jedes nach dem DPF zertifizierte Unternehmen verpflichtet sich, diese
+Datenschutzstandards einzuhalten. Weitere Informationen hierzu erhalten Sie vom Anbieter unter folgendem Link:
+<a href="https://www.dataprivacyframework.gov/participant/5780" target="_blank" rel="noopener
+noreferrer">https://www.dataprivacyframework.gov/participant/5780</a>.</p>
+<p>Quelle: <a href="https://www.e-recht24.de">https://www.e-recht24.de</a></p>
+<a class="back-to-top" href="#datenschutz">Back to top</a>
+        </section>
+    </dialog>
+</body>
+</html>
