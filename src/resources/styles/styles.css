@@ -611,7 +611,7 @@ footer button{
 .overlay-section{
     background-color: var(--lowColor);
     color: var(--highlight);
-    margin: 1em 0;
+    margin: 1em;
     position: relative;
 }
 
@@ -633,7 +633,16 @@ footer button{
 
 .overlay p{
     align-self: baseline;
-    margin-top: 0;
+    margin: 1em 0;
+}
+
+.overlay p a{
+    color: inherit;
+    text-decoration: underline;
+}
+
+.overlay a:visited{
+    color: inherit;
 }
 
 .back-to-top{
